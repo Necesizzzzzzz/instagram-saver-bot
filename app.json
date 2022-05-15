@@ -1,1 +1,36 @@
-
+{
+    "name": "insta bot",
+    "description": "insta indirme botu.",
+    "logo": "https://telegra.ph/file/eeafadebe1e3205caa4a1.jpg",
+    "keywords": [
+        "bot",
+        "token",
+        "indirme",
+        "tiktok",
+        "bot"
+    ],
+    "repository": "https://github.com/Necesizzzzzzz/instagram-saver-bot",
+    "success_url": "https://t.me/teamsohbett1",
+    "image": "heroku/python",
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Botun tokeni..",
+            "value": "",
+            "required": true
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+        },
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
